@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Container 주축 교차축 정렬</title>
+    <style>
+        .container{
+            width: 600px;
+            height: 600px;
+            display: flex; /* body 요소를 flex 컨테이너로 설정 */
+            flex-direction: column; /* flex 컨테이너의 주축을 세로로 설정, row-가로/ column-세로 */
+            /* 조건.1 */
+            justify-content: center; /* 주축이 세로이면 수직 중앙정렬, 주축이 가로이면 가로 중앙정렬 */
+            /* 조건.2 */
+            align-items: center ; /* 주축이 세로이면 가로 중앙정렬, 주축이 가로이면 수직 중앙정렬 */
+            /* 위의 조건.1과 조건.2  모두 넣게 되면 가로 세로 중앙 정렬 */
+            border: 1px solid gray;
+        }
+        .box{
+            width: 100px; /* 너비를 100px로 설정 */
+            height: 100px; /* 높이를 100px로 설정 */
+            margin: 10px; /* 박스 요소와 인접한 요소들 사이의 간격을 10px로 설정 */
+            border: 2px solid red;
+        }
+        .box1{
+            background-color: yellow;
+        }
+        .box2{
+            background-color: skyblue;
+        }
+        .box3{
+            background-color: pink;
+        }
+        .box4{
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <h2>Flex Container 주축 교차축 정렬</h2>
+    <div class="container">
+        <div class="box box">박스1</div>
+        <div class="box box2">박스2</div>
+        <div class="box box3">박스3</div>
+        <div class="box box4">박스4</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+body{
+    font-family: '맑은 고딕', sans-serif, '굴림';
+}
+/* 시멘틱 태그 전체를 감싸는 스타일링 */
+#wrapper{
+    width: 800px; /* wrapper의 너비를 800px로 설정 */
+    margin: 10px auto; /* wrapper를 위아래는 10px 마진, auto 수평으로 가운데 정렬 */
+}
+header{
+    width: 100%; /* header의 너비를 100%로 설정, 즉 800px */
+    height: 100px; /* header의 높이를 100px로 설정 */
+    background-color: red; /* header의 배경색을 빨간색으로 설정 */
+}
+
+header nav{ /* 자손선택자 즉, header의 자손인 nav를 선택 */
+    float: left; /* nav를 왼쪽으로 띄움 */
+    width: 80%; /* nav의 너비를 80%로 설정 */
+}
+
+header nav ul{
+    list-style-type: none; /* ul의 기본 목록 표시를 없앰(블릿제거) */
+}
+
+header nav ul li{
+    /* li를 인라인으로 표시, 원래 li는 블록요소인데 인라인 속성으로 바꿔줌으로 인해서 가로로 나열됨 */
+    display: inline; 
+    float: left; /* li를 왼쪽으로 띄움 */
+    font-weight: bold; /* 글자를 굵게 설정 */
+    margin: 20px; /* li의 상하좌우 마진을 20px로 설정 */
+}
+
+header nav ul li a{
+    text-decoration: none; /* a태그의 밑줄을 없앰 */
+    color: white; /* a태그의 글자색을 흰색으로 설정 */
+}
+
+p{
+    line-height: 20px; /* p태그의 높이를 20px로 설정 */
+    font-size: 12px; /* p태그의 글자 크기를 12px로 설정 */
+}
+
+section{
+    float: left; /* section을 왼쪽으로 띄움 */
+    width: 580px; /* section의 너비를 580px로 설정 */
+    padding: 5px; /* section의 안쪽 여백을 5px로 설정 */
+}
+
+section article{
+    float: left; /* article을 왼쪽으로 띄움 */
+    width: 250px; /* article의 너비를 250px로 설정 */
+    height: 220px; /* article의 높이를 220px로 설정 */
+    margin: 5px;    /* article의 상하좌우 마진을 5px로 설정 */
+    border: 1px solid #ccc; /* article의 테두리를 회색으로 설정 */
+}
+
+aside{
+    float: right; /* aside를 오른쪽으로 띄움 */
+    width: 150px; /* aside의 너비를 200px로 설정 */
+    height: auto; /* aside의 높이를 자동으로 설정 */
+    margin-top: 80px; /* aside의 위쪽 마진을 80px로 설정 */
+    padding: 5px; /* aside의 안쪽 여백을 5px로 설정 */
+    border: 1px solid #ccc; /* aside의 테두리를 회색으로 설정 */
+}
+
+aside img{
+    max-width: 100%; /* aside의 이미지의 최대 너비를 100%로 설정 */
+}
+
+footer{
+    clear: both; /* float 속성을 해제 */
+    width: 100%; /* footer의 너비를 100%로 설정 */            
+    background-color: gray; /* footer의 배경색을 빨간색으로 설정 */
+    text-align: center; /* footer의 텍스트를 가운데 정렬 */
+    line-height: 50px; /* footer의 높이와 텍스트의 높이를 일치시킴 */
+    color: white; /* footer의 글자색을 흰색으로 설정 */
+}
+.at1, .at2, .at3, .at4{
+    transition: 2s;     /* article의 변화를 2초동안 일어나도록 설정 */
+    -webkit-transition: 2s; /* 크롬 브라우저에서 article의 변화를 2초동안 일어나도록 설정 */
+    -moz-transition: 2s; /* 파이어폭스 브라우저에서 article의 변화를 2초동안 일어나도록 설정 */
+}
+
+.at1:hover{
+    background-color: green; /* article에 마우스를 올리면 배경색이 초록색으로 변함 */
+}
+.at2:hover{
+    background-color: rgb(239, 239, 4); /* article에 마우스를 올리면 배경색이 초록색으로 변함 */
+}
+.at3:hover{
+    background-color: rgb(231, 3, 132); /* article에 마우스를 올리면 배경색이 초록색으로 변함 */
+}
+.at4:hover{
+    background-color: rgb(53, 17, 161); /* article에 마우스를 올리면 배경색이 초록색으로 변함 */
+}

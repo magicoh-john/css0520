@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>animation</title>
+  <style>
+    div{
+      width:100px;
+      height:100px;
+      border-color:red; /* 테두리 색상은 빨간색 */
+      animation-name:bgchange;  /* 사용할 애니메이션 키프레임의 이름 */
+      animation-duration:5s;    /* 전환 시간 5초 */
+      /* animation-fill-mode: forwards;    /* 애니메이션 종료 후 상태를 유지 */
+    }
+    /* 애니메이션 효과를 위한 키프레임 설정 */
+    @keyframes bgchange{    /* 애니메이션 효과를 위한 키프레임 설정 */
+      0%{background-color:red;} /* 0% 지점에서 배경색은 빨간색 */
+      25%{background-color:orange;} /* 25% 지점에서 배경색은 주황색 */
+      50%{background-color:yellow;} /* 50% 지점에서 배경색은 노란색 */
+      100%{background-color:green;}     /* 100% 지점에서 배경색은 초록색 */
+    }
+  </style>
+</head>
+<body>
+  <div></div>
+</body>
+</html>

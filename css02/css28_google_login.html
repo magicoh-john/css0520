@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <style>
+        .container {
+            display: flex; /* Flex 컨테이너 설정 */
+            justify-content: center; /* 가로 중앙 정렬 */
+            align-items: center; /* 세로 중앙 정렬 */
+            height: 60vh; /* 화면 전체 높이 */
+            width: 300px; /* 폼 너비 */
+            border: 1px solid gray; /* 테두리 */
+            margin: 0 auto; /* 자동 마진으로 중앙 위치 */
+            padding: 20px; /* 내부 패딩 */
+            box-sizing: border-box; /* 박스 사이징을 경계 상자로 설정 */
+            text-align: center; /* 텍스트 중앙 정렬 */
+        }
+        form {
+            width: 100%; /* 폼 너비를 컨테이너의 100%로 설정 */
+        }
+        .login-item {
+            width: 100%; /* 아이템 너비 */
+            display: flex; /* Flexbox 사용 */
+            flex-direction: column; /* 요소들을 세로로 나열 */
+            align-items: flex-start; /* 요소들을 시작점에서 정렬 */
+            padding: 10px 0; /* 상하 패딩 */
+        }
+        input[type="text"], input[type="password"], button {
+            width: 90%; /* 입력 요소 너비 */
+            padding: 5px; /* 패딩 */
+            margin: 5px auto; /* 자동 마진으로 가운데 정렬 */
+            box-sizing: border-box; /* 패딩과 보더를 너비에 포함 */
+        }
+        p, a {
+            text-align: center; /* 가운데 정렬 */
+        }
+        label {
+            text-align: left; /* 텍스트 왼쪽 정렬 */
+            width: 90%; /* 너비 설정 */
+            margin: 0 auto; /* 자동 마진으로 가운데 정렬 */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <div class="login-item">
+                <button type="button">
+                    <img src="./images/google_logo.png" 
+                    alt="Google 로그인" height="20px" style="vertical-align: middle;">
+                    Login in with Google
+                </button>
+            </div>
+            <div>
+                <p>or</p>
+            </div>
+            <div class="login-item">
+                <label for="username">아이디</label>
+                <input type="text" id="username" name="username" placeholder="Username">
+            </div>
+            <div class="login-item">
+                <label for="password">비밀번호</label>
+                <input type="password" id="password" name="password" placeholder="Password">
+            </div>
+            <div class="login-item">
+                <button type="submit">로그인</button>
+            </div>
+            <div class="login-item">
+                <a href="#">아이디/비밀번호 찾기</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
